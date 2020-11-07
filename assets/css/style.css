@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body
+{
+  font-family:'Raleway', sans-serif;
+	margin: 0;
+	padding:0;
+	width: 100%;
+	background-color: #fff;
+}
+.header_menu
+{
+	display: flex;
+	width: 100%;
+	background-color: #fff;
+  padding: 0;
+	margin: 0;
+	height: 70px;
+	line-height: 60px;
+	box-shadow: 1px 0px 3.5px black;
+  transition: all 1s ease-in;
+  position:fixed;
+}
+
+.header_menu:hover{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 100px ;
+  line-height: 100px;
+  box-shadow: 1px 0px 3.5px black;
+  transition: all 0.5s ease-in;
+  position:fixed;
+}
+
+.list_menu
+{
+	display: flex;
+	justify-content: space-around;
+	width:100%;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+  color: #16a6b6;
+}
+.list_menu > li
+{
+	list-style-type: none;
+}
+
+.list_menu > li > a
+{
+  text-decoration: none;
+	color: #16a6b6;
+}
+
+.social > li > a
+{
+  text-decoration: none;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.container{
+  background-color: #16a6b6;
+  padding: 0;
+  margin-top: auto;
+  height: 500px;
+  width: auto;
+}
+.name_slogan{
+  margin-left: 70px;
+  padding-top: 150px;
+}
+#slogan{
+margin-top:-50px;
+color: #e84a3f;
+font-size: 30px;
+}
+#name{
+  font-size: 40px;
+  color: white;
+}
+
+.fab.fa-linkedin.fa-2x{
+  color: white;
+}
+.far.fa-envelope.fa-2x{
+  color: white;
+}
+.social{
+margin-left: 1200px;
+list-style-type: none;
+color: white;
+font-size: 20px;
+margin-top: -100px;
+}
+#Soumettre
+{
+  margin-top: 10px;
+  background-color: #e84a3f;
+  width: 150px;
+  height: 60px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  border: 0;
+  margin-left: 630px;
+  margin-bottom: 10px;
+}
+#propos{
+  	color: #16a6b6;
+}
+form
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  padding-top: 3%;
+  font-size: 1.3em;
+  width: 80%;
+  padding-right: 10%;
+}
+.contact{
+  background-color: #16a6b6;
+  padding: 0;
+    width: auto;
+}
+.label{
+  color: white;
+    margin-left: 140px;
+}
+#cont{
+  color: white;
+}
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
