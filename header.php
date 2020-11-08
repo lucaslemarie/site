@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="assets/fa/css/all.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="fonction.js"></script>
 </head>
 

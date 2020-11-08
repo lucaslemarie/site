@@ -1,36 +1,52 @@
 <?php
-if(isset($_POST['mailform']))
-{
-	if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message']))
-	{
-		$header="MIME-Version: 1.0\r\n";
-		$header.='From:"Lucas Lemarié"<lucas.lemarie2002@gmail.com>'."\n";
-		$header.='Content-Type:text/html; charset="uft-8"'."\n";
-		$header.='Content-Transfer-Encoding: 8bit';
+    require ('assets/recaptcha/autoload.php');
 
-		$message='
-		<html>
-			<body>
-				<div align="center">
-					<br />
-					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
-					<u>Mail de l\'expéditeur :</u>'.$_POST['mail'].'<br />
-					<br />
-					'.nl2br($_POST['message']).'
-					<br />
-				</div>
-			</body>
-		</html>
-		';
+    if(isset($_POST['submitpost'])){
+        if(isset($_POST['g-recaptcha-response'])){
+            if(!empty($_POST['g-recaptcha-response'])) {
+                $recaptcha = new \ReCaptcha\ReCaptcha('6Ld0juAZAAAAANJZdNV6T9fplAcNLBNEAhlywqbh');
+                $resp = $recaptcha->verify($_POST['g-recaptcha-response']);
+                if ($resp->isSuccess()) {
 
-		mail("lucas.lemarie2002@gmail.com", "CONTACT - Lucas Lemarié", $message, $header);
-		$msg="Votre message a bien été envoyé !";
-	}
-	else
-	{
-		$msg="Tous les champs doivent être complétés !";
-	}
-}
+                    if(isset($_POST['email']))
+                    {
+                        if(!empty($_POST['firstname']) and !empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message']))
+                        {
+                            $header ="MIMI-Version 1.0\r\n";
+                            $header .= 'From: "web1-ll.local" <lucas.lemarie2002@gmail.com>' . "\n";
+                            $header .='Content-Type:text/html; charset="utf-8"'. "\n";
+                            $header .='Content-Transfer-Encoding: 8bit';
+
+
+                            $message = '
+                            <html>
+                                <body>
+                                    <ul>Prénom : '.$_POST['firstname']. '</ul>
+                                    <ul>NOM : '.$_POST['name']. '</ul>
+                                    <ul>adresse mail : '.$_POST['email']. '</ul>
+                                    <ul>Message : '.nl2br($_POST['message']). '</ul>
+                                </body>
+                            </html>';
+                            mail("lucas.lemarie2002@gmail.com", "Mail contact profil pro", $message, $header);
+                            $msg="<p><i class='fas fa-check'></i> Votre message à bien été envoyé !</p>";
+                        }else{
+                            $msg="<p>Veuillez compléter tout les champs !</p>";
+                        }
+                    }
+                }
+            } else {
+                $msg_captcha="<p> <i class='fas fa-times'></i> Merci de valider le captcha</p>";
+            }
+        }
+    }
+
+    if(isset($msg)) {
+        echo $msg;
+    }
+
+    if(isset($msg_captcha)) {
+        echo $msg_captcha;
+    }
 ?>
 <center>
 <div class="contact">
@@ -43,13 +59,8 @@ if(isset($_POST['mailform']))
       <label for="message" class="label">Commentaire<sup>*</sup> :</label>
 			<textarea name="message" placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
 			<input type="submit" value="Soumettre" name="mailform" id="Soumettre"/>
+      <div class="g-recaptcha" data-sitekey="6Ld0juAZAAAAALL3VArQPysiEGBi97ef_nORlk_z"></div>
 		</form>
-		<?php
-		if(isset($msg))
-		{
-			echo $msg;
-		}
-		?>
 </div>
 </center>
 </html>
