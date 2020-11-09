@@ -132,7 +132,7 @@ h3
 {
   	color: #16a6b6;
 }
-form
+#form
 {
   display: flex;
   flex-direction: column;
@@ -144,7 +144,7 @@ form
 }
 .contact{
   background-color: #16a6b6;
-  padding: 0;
+  margin-bottom:5000px;
     width: auto;
 }
 .label{
@@ -168,6 +168,10 @@ height: 400px;
 #apropos{
 text-align: justify;
 }
+.forma{
+  text-align: justify;
+  width:500px;
+}
 #prop{
   padding: 0;
   margin-top: auto;
@@ -189,7 +193,21 @@ text-align: justify;
 .fas.fa-laptop-code{
   color: #16a6b6;
 }
+#exper{
+  list-style-type: none;
+}
+#form{
+  list-style-type: none;
+}
 #exper > li > a{
   text-decoration: none;
   color: #16a6b6;
+}
+.fas.fa-angle-down{
+color:black;
+padding-left: 765px;
+}
+#lemonnier{
+  width:100px;
+  height:100px;
 }

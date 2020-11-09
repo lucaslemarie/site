@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mentions Légales</title>
+  </head>
+  <body>
 <p style="text-align:center">MENTIONS LEGALES :</p>
 
 <p style="text-align:justify">Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : <a href="index.php" target="_blank">web1-ll.local</a> les informations suivantes :</p>
@@ -58,3 +65,5 @@ Conformément aux dispositions des articles 38 et suivants de la loi 78-17 du 6 
 Le site web1-ll.local est en conformité avec le RGPD voir notre politique RGPD  rgpd.</p>
 
 <p style="text-align:justify">Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
+</body>
+</html>

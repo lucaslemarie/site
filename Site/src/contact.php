@@ -48,6 +48,7 @@
         echo $msg_captcha;
     }
 ?>
+
 <center>
 <div class="contact">
 		<h2 id="cont">Me contacter </h2>
@@ -63,4 +64,4 @@
 		</form>
 </div>
 </center>
-</html>
+</body>
