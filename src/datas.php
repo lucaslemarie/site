@@ -1,3 +1,3 @@
 <?php
-$menu=['Lemarié Lucas','A propos','Compétences','Expérience','Formation','Contact'];
+$menu=['Lemarié Lucas','<a href="#propos">A propos</a>','Compétences','Expérience','Formation','Contact'];
 ?>
