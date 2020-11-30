@@ -6,4 +6,5 @@
 <li><i class="fab fa-github fa-2x"></i><a href="https://github.com/lucaslemarie">Mon github</a></li>
 </ul>
 </footer>
+</body>
 </html>
