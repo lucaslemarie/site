@@ -128,6 +128,9 @@ h2
 {
   	color: #16a6b6;
 }
+#contacter{
+  color: white;
+}
 h3
 {
   	color: #16a6b6;
@@ -207,7 +210,7 @@ text-align: justify;
 color:black;
 padding-left: 765px;
 }
-#lemonnier{
+.lemonnier{
   width:100px;
   height:100px;
 }
