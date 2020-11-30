@@ -13,6 +13,6 @@
 <body>
 <header class="header_menu">
   <?php
-  $menu=['A propos','Compétences','Expérience','Formation','Contact'];
+  getMenu($menu);
   ?>
 </header>
