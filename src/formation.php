@@ -1,4 +1,4 @@
-<div="center">
+<div class="center">
 <h2 id="formation">Mes formations</h2>
 <ul id="form">
 <li><h3>BAC STI2D SIN EN JUIN 2020</h3></li>
