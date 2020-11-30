@@ -6,7 +6,7 @@
 
 **Language** : HTML, CSS, PHP, JS
 
-**Photo de mon site** : ![Screenshot](screen.png)
+**Photo de mon site** : ![Screenshot](assets/img/screen.png)
 
 **Installation** : Pour accéder au site, écrire cette url dans un moteur de recherche : https://lucaslemarie.herokuapp.com/
 
