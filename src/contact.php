@@ -52,7 +52,7 @@
 <center>
 <div class="contact">
 		<h2 id="cont">Me contacter </h2>
-		<form method="POST" action="">
+		<form method="POST" action="index.php">
       <label for="nom" class="label">Nom<sup>*</sup> :</label>
 			<input type="text" name="nom" placeholder="Votre nom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
       <label for="mail" class="label">Email<sup>*</sup> :</label>
