@@ -1,4 +1,4 @@
-<center>
+<div class="center">
 <h2 id="exp">Mes expériences</h2>
 <ul id="exper">
 <li><h3>STAGE CHEZ CHAROZE DU 12 AU 16 DECEMBRE 2016</h3></li>
@@ -11,5 +11,5 @@
 <li><p>Je me suis occupé de la partie programmation sur AppInventor pour créer une application pour contrôler le panneau</p></li>
 </ul>
 <input type='button' id='cv' value='Télécharger mon CV' onclick="window.location=' assets/pdf/CV_Lucas_Lemarie.pdf';">
-</center>
+</div>
 <a href="#formation"><i class="fas fa-angle-down fa-5x"></i></a>

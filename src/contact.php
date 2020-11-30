@@ -49,7 +49,7 @@
     }
 ?>
 
-<center>
+<div class="center">
 <div class="contact">
 		<h2 id="cont">Me contacter </h2>
 		<form method="POST" action="index.php">
@@ -63,4 +63,4 @@
       <div class="g-recaptcha" data-sitekey="6Ld0juAZAAAAALL3VArQPysiEGBi97ef_nORlk_z"></div>
 		</form>
 </div>
-</center>
+</div>
