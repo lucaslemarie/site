@@ -54,9 +54,9 @@
 		<h2 id="cont">Me contacter </h2>
 		<form method="POST" action="index.php">
       <label for="nom" class="label">Nom<sup>*</sup> :</label>
-			<input type="text" name="nom" placeholder="Votre nom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
+			<input type="text" name="nom" id="nom" placeholder="Votre nom" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
       <label for="mail" class="label">Email<sup>*</sup> :</label>
-			<input type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+			<input type="email" name="mail" id="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
       <label for="message" class="label">Commentaire<sup>*</sup> :</label>
 			<textarea name="message" placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
 			<input type="submit" value="Soumettre" name="mailform" id="Soumettre"/>
