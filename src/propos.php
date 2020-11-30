@@ -4,5 +4,5 @@
   <div id="prop">
   <p id='apropos'>Je m'appelle Lucas Lemarié, j'ai 18 ans et je suis en formation à Supavenir Sainte Ursule Caen pour obtenir un BTS Service Informatique aux Organisations. Je fais du piano depuis 5 ans et trouve que savoir lire une partition est un peu une façon de décoder un langage comme en informatique.Je me suis équipé d’un nouvel ordinateur et d’un kit arduino (comprenant notamment une carte arduino, des LED, un module LCD, un moteur, un module RFID, des résistances et des boutons.) pour approfondir mes connaissances en langage C++.</p>
 </div>
-</div class="center">
+</div>
   <a href="#comp"><i class="fas fa-angle-down fa-5x"></i></a>
