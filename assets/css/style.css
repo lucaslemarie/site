@@ -128,7 +128,7 @@ h2
 {
   	color: #16a6b6;
 }
-#contacter{
+h2 > #contacter{
   color: white;
 }
 h3
