@@ -59,7 +59,7 @@
 			<input type="email" name="mail" id="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
       <label for="message" class="label">Commentaire<sup>*</sup> :</label>
 			<textarea name="message" placeholder="Votre message"><?php if(isset($_POST['message'])) { echo $_POST['message']; } ?></textarea><br /><br />
-			<input type="submit" value="Soumettre" name="mailform" id="Soumettre"/>
+			<input type="submit" value="Soumettre" name="mailform" id="message"/>
       <div class="g-recaptcha" data-sitekey="6Ld0juAZAAAAALL3VArQPysiEGBi97ef_nORlk_z"></div>
 		</form>
 </div>
