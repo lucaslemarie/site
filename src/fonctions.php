@@ -7,4 +7,5 @@ function getMenu(array $items){
     $res.='</ul>';
     echo $res;
 }
+
 ?>
