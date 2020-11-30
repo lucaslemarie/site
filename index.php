@@ -1,3 +1,5 @@
+<?php include_once "src/datas.php" ?>
+<?php include_once "src/fonctions.php" ?>
 <?php
 include_once "src/header.php"; ?>
 <?php include_once "src/home.php"; ?>
